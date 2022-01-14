@@ -19,7 +19,7 @@ const userSchema= new Schema({
     },
     pic:{
         type: String,
-        default:"https://res.cloudinary.com/xenotoxin/image/upload/v1638857724/default-profile-pic-e1513291410505_saksl6.jpg"
+        default:"https://res.cloudinary.com/xenotoxin/image/upload/v1642172466/default_cxmawp.jpg"
     },
     followers: [{
         type: ObjectID,
