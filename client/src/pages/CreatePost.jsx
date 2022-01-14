@@ -59,7 +59,7 @@ const CreatePost = () => {
         })
             .then(res => res.json())
             .then(data => {
-                // console.log(data)
+                console.log(data)
             setUrl(data.url) //async operation take time
             })
             .catch(err => {
