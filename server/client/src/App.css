@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Grand+Hotel:wght@500&display=swap");
+.nav-wrapper {
+  background-color: white;
+  color:"white";
+  display: flex;
+  /* justify-content: flex-start; */
+  margin: auto 0px;
+}
+.nav-links {
+  margin-left: 30%;
+  float: right;
+}
+a {
+  color: black !important;
+}
+
+.brand-logo {
+  margin-left: 3%;
+  font-size: 140% !important;
+  font-family: "Grand Hotel", cursive;
+}
+.mycard {
+  margin-top: 30px;
+}
+.auth-card {
+  background-color: rgb(253, 254, 255);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 10px auto;
+}
+.auth-card h2 {
+  font-family: "Grand Hotel", cursive;
+}
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid rgb(10, 162, 250) !important;
+  box-shadow: 0 1px 0 0 rgb(11, 151, 233) !important;
+}
+.input-field input[type="password"]:focus {
+  border-bottom: 1px solid rgb(10, 162, 250) !important;
+  box-shadow: 0 1px 0 0 rgb(11, 151, 233) !important;
+}
+.home {
+  margin: auto 0px;
+}
+.home-card {
+  max-width: 500px;
+  height: max-content;
+  margin: 26px auto;
+}
+
+.Container {
+  margin: 0px 360px;
+  text-align: center;
+}
+.Container {
+  margin: auto 0px;
+}
+.profile-container1 {
+  display: flex;
+  justify-content: space-around;
+  margin: 18px 0px;
+  border-bottom: 1px solid grey;
+}
+.profile-pic {
+  display: flex;
+  /* justify-content: space-around; */
+  margin: 18px 0px;
+  /* margin-left: 150px; */
+}
+/* /////////////// profile bio //// */
+.profile-info {
+  margin: 0px -200px;
+}
+.username {
+  display: flex;
+  justify-content: flex-start;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: -50%;
+}
+.bio {
+  text-align: left;
+  margin: 10px 0px;
+}
+/* ///////////////////// */
+
+/* ///////////// profile css ////////////  */
+.bio {
+}
+.navigate {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 20%;
+  /* border-bottom: 1px solid grey; */
+}
+.post-Container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+  height: 30%;
+  width: 30%;
+  margin: 10px 10px;
+}
+/* //////////////////////////////// */
+
+
+/* ///////// footer ////////////// */
+:root {
+  --footerheight: 15vh;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+}
+footer {
+  margin: 310px auto;
+  font-size: 1.5rem;
+  height: var(--footer-height);
+  color: cornsilk;
+  background: black;
+  position: absolute;
+  bottom: var(--footerHeight);
+  width: 100%;
+}
+.footer-container {
+  max-width: 1400px;
+  margin: auto;
+}
+.footer-line1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-icon {
+  margin: 10px;
+}
+.fa-instagram:hover {
+  color: hotpink;
+}
+.fa-facebook-square:hover {
+  color: rgb(73, 73, 252);
+}
+.fa-twitter:hover {
+  color: rgb(118, 118, 201);
+}
+/* /////////////////////////// */
+
+ /* ///////////// Create Post ////////// */
+.card {
+  margin: 30px auto;
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+ /* /////////////////// */
