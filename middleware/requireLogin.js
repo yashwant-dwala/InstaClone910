@@ -15,8 +15,9 @@ module.exports = (req,res,next)=>{
         if(err){
             res.status(401).json({error:"u must be logged in"})
         }
-        const {_id}= payload
-        User.findById(_id).then(userdata=>{
+        const { id } = payload
+        console.log(payload);
+        User.findById(id).then(userdata=>{
             req.user = userdata
             // console.log("values: ",payload)
             next()
