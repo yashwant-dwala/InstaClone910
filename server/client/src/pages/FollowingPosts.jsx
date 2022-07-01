@@ -19,7 +19,7 @@ const FollowingPosts = () => {
       }
     }).then(res => res.json())
       .then(result => {
-        console.log(result.post)
+//         console.log(result.post)
         setData(result.post)
       })
   }, [])
