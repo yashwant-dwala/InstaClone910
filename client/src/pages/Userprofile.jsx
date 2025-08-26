@@ -61,7 +61,7 @@ const Userprofile = () => {
             })
             setUser(newUserData.data.updatedUser)
             setUnfollowed(true)
-            console.log("Found: ", newUserData.data)
+//             console.log("Found: ", newUserData.data)
         } catch (error) {
             console.log(error)
         }
