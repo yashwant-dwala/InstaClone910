@@ -19,7 +19,11 @@ const Home = () => {
     }).then(res => res.json())
       .then(result => {
         console.log(result.post)
-        setData(result.post)
+        setData(result.post || [])
+      })
+      .catch(err => {
+        console.error("Error fetching posts:", err)
+        setData([]) 
       })
   }, [])
 

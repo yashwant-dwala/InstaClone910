@@ -10,13 +10,9 @@ if (process.env.NODE_ENV != "production") {
 }
 
 // Connecting to Mongo DB Cloud
-mongoose.connect(MONGOURI);
-mongoose.connection.on("connected", () => {
-  console.log("connected to mongo !!!");
-});
-mongoose.connection.on("error", (err) => {
-  console.log("error connecting....", err);
-});
+mongoose.connect(MONGOURI, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('MongoDB connected'))
+  .catch(err => console.error('MongoDB connection error:', err));
 ////////////////////
 
 // Regestering the user model in app.js

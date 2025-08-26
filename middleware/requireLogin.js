@@ -7,7 +7,7 @@ const User= mongoose.model('User')
 module.exports = (req,res,next)=>{
     const {authorization} = req.headers //destructuring
     if(!authorization){
-        res.status(401).json({error:"u must be logged in"})
+        return res.status(401).json({error:"u must be logged in"})
     }
     const token = authorization.replace("Bearer ", "")
     // console.log(token)
@@ -15,7 +15,7 @@ module.exports = (req,res,next)=>{
         if(err){
             res.status(401).json({error:"u must be logged in"})
         }
-        const { id } = payload
+        const { id } = payload;
         console.log(payload);
         User.findById(id).then(userdata=>{
             req.user = userdata
